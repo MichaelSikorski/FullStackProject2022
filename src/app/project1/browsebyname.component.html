@@ -1,0 +1,15 @@
+<div id="alphabeticalList">
+<!--<h2>A</h2>
+<h2>B</h2>
+<h2>C</h2>--> 
+<!-- 
+	1) Fetch list of games from DB, sorted in alphabetical order
+	2) Iterate through the list using *ngFor and create an H2 tag for each letter
+	3) While the first letter is the same as previous, add the game using anchor tag
+
+-->
+
+<div *ngFor="let game of listOfGames" >
+	<h2> {{ game }} </h2>
+</div>
+</div>

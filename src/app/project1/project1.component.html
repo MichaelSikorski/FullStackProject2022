@@ -1,0 +1,29 @@
+<div class="project_header">
+	<div id="logo">
+		<a href="" [routerLink]="['./']" ><img [src]="logoSrc" width="200px" /></a>
+		<span>Buy Old Games</span>
+	</div>
+	
+	<div id="cart">
+		<a href=""><span>View Cart ({{itemsInCart}})</span></a>
+	</div>
+</div>
+
+<div id="header_links">
+	<span>Browse by: </span>
+	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'name'}" >Name</a><span> / </span>
+	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'platform'}" >Platform</a><span> / </span>
+	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'genre'}" >Genre</a><span> / </span>
+	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'release'}" >Release Date</a><span> / </span>
+	
+	<!--<a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>-->
+	
+</div>
+
+<div id="searchbox">
+	<input type="text" placeholder="Search..." />
+</div>
+
+<div style="width:100%; clear:both;">
+	<router-outlet></router-outlet>
+</div>

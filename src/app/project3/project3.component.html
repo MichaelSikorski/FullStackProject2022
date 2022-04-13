@@ -1,0 +1,11 @@
+<div class="project-toolbar">
+  <div class="spacer"></div>
+  <span style="width:auto;">CriticalBusinessApp QA Dashboard</span>
+  <div class="spacer"></div>
+</div>
+<div style="position:relative;top:35px;">
+<ul *ngFor="let test of listOfTests" >
+	<li>{{test._id.$oid}}</li>
+	<li>{{test.type}}</li>
+</ul>
+</div>

@@ -1,0 +1,59 @@
+<div id="project2container">
+	<h1>
+		Lightsaber Builder
+	</h1>
+	<div id="builderMenu">
+		<h2>Customize your lightsaber</h2>
+		
+		
+		  <label for="selectedType">Type</label>
+		  <select id="selectedType" matNativeControl [value]="selectedType">
+			<option value="single">Single</option>
+			<option value="double">Double-sided</option>
+			<option value="dual">Dual sabers</option>
+		  </select>
+		
+		
+		
+		  <label for="selectedStyle">Style</label>
+		  <select id="selectedStyle" matNativeControl [value]="selectedStyle">
+			<option value="style1">Style 1</option>
+			<option value="style2">Style 2</option>
+			<option value="style3">Style 3</option>
+		  </select>
+		
+		
+		
+		  <label for="selectedMaterial" >Material</label>
+		  <select id="selectedMaterial" matNativeControl [value]="selectedMaterial">
+			<option value="mat1">Material 1</option>
+			<option value="mat2">Material 2</option>
+			<option value="mat3">Material 3</option>
+		  </select>
+		
+		
+		
+		  <label for="selectedColor1">Color 1</label>
+		  <select id="selectedColor1" matNativeControl [value]="selectedColor1">
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="red">Red</option>
+		  </select>
+		
+
+		<p>You selected:</p>
+		<p>Type: {{selectedType}}</p>
+		<p>Style: {{selectedStyle}}</p>
+		<p>Material: {{selectedMaterial}}</p>
+		<p>Color 1: {{selectedColor1}}</p>
+		<p>Color 2: {{selectedColor2}}</p>
+
+	</div>
+	<div id="3dspace">
+		
+	</div>
+	<div id="modelControls">
+	
+	</div>
+	
+</div>

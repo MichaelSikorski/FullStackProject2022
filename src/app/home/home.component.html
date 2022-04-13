@@ -1,48 +1,33 @@
+<div class="content" role="main">
 
+  <!-- Highlight Card -->
+  <div class="card highlight-card">
+	<h1>Welcome to my portfolio!</h1>
+  </div>
 
-<mat-sidenav-container class="sidebar-container">
-  <!--<mat-sidenav mode="side" opened>
-	<mat-selection-list #projects [multiple]="false">
-		<mat-list-option *ngFor="let page of ['Home']" [value]="page">
-		Home
-		</mat-list-option>
-	</mat-selection-list>
-	<h1>Projects</h1>
-	<mat-selection-list #projects [multiple]="false">
-  <mat-list-option *ngFor="let project of listOfProjects" [value]="project">
-    {{project}}
-  </mat-list-option>
-</mat-selection-list>
+  <h2>About this application</h2>
 
-  </mat-sidenav>-->
-  <mat-sidenav mode="side" opened>
+  <div class="card-container">
+    <p>This application is being hosted by GitHub pages. The full source code is available at <a title="Link to source code" href="https://github.com/MichaelSikorski/FullStackProject2022" target="_blank" rel="noopener">https://github.com/MichaelSikorski/FullStackProject2022</a> Instructions are included on how to set up and run the application locally.</p>
+	<p></p>
 	
-	<mat-selection-list #projects [multiple]="false">
-	<mat-list-option routerLink="/home">
-		<!--<a class="button" routerLink="/home" routerLinkActive="activebutton">Home</a>-->
-		Home
-	</mat-list-option>
-	<h3><b>Projects</b></h3>
-  <mat-list-option *ngFor="let project of listOfProjects" [value]="project.name" routerLink="/{{project.path}}">
-    {{project.name}}
-  </mat-list-option>
-  <!--<mat-list-option *ngFor="let project of listOfProjects" [value]="project">
-    {{project}}
-  </mat-list-option>-->
-</mat-selection-list>
+  </div>
 
-  </mat-sidenav>
-  <mat-sidenav-content>
-	<div class="toolbar" role="banner">
+  <h2>Technologies</h2>
   
-	<img
-    width="40"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-	/>
-  <span style="width:auto;">FullStackProject by Michael Sikorski</span>
-  <div class="spacer"></div>
-  <!--<a target="_blank" rel="noopener" href="https://www.linkedin.com/in/michael-sikorski-69110515b/" title="Author's LinkedIn page" aria-label="Author's LinkedIn page" style="padding-right: 25px;width:fit-content">
+  <!--<div class="card-container">-->
+  <div>
+    <p>Built with the following:</p>
+	<ul>
+		<li>Angular 13.2</li>
+		<li>MongoDB</li>
+	</ul>
+  </div>
+
+  <!-- Links -->
+  <div class="card-container">
+	
+    <a class="square-link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/michael-sikorski-69110515b/" title="Author's LinkedIn page" aria-label="Author's LinkedIn page" style="padding-right:5px;padding-left:5px;width:fit-content">
 	<svg _ngcontent-cxj-c16="" _ngcontent-vyn-c16="" id="linkedin-logo" xmlns="http://www.w3.org/2000/svg" height="24" width="90" viewBox="30 0 24 24">
 		<g _ngcontent-cxj-c16="" _ngcontent-vyn-c16="" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="inbug">
 			<path _ngcontent-cxj-c16="" _ngcontent-vyn-c16="" d="M19.479,0 L1.583,0 C0.727,0 0,0.677 0,1.511 L0,19.488 C0,20.323 0.477,21 1.333,21 L19.229,21 C20.086,21 21,20.323 21,19.488 L21,1.511 C21,0.677 20.336,0 19.479,0" transform="translate(63.000000, 0.000000)" class="bug-text-color"></path>
@@ -63,15 +48,7 @@
 			<polygon _ngcontent-cxj-c16="" _ngcontent-vyn-c16="" fill="white" points="3 3 0 3 0 18 9 18 9 15 3 15"></polygon>
 		</g>
 	</svg>
-	</a> -->
-</div>
+	</a>
+  </div>
 
-<div class="content" role="main">
-	<div style="width:100%">
-		<router-outlet></router-outlet>
-	</div>
-	
 </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-

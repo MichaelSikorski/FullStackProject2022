@@ -1,0 +1,20 @@
+#project2container {
+	height: 600px;
+	width: 800px;
+	background-color: #596b6f;
+	color: white;
+}
+
+#builderMenu {
+	width: 200px;
+	background-color: rgba(60, 85, 91, 0.5);
+}
+
+#3dspace {
+	width: 600px;
+}
+
+h1 {	
+	text-align: center;
+	font-weight: bold;
+}
