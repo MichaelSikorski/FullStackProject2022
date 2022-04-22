@@ -14,15 +14,16 @@ export class Project1HomeComponent implements OnInit {
 	image2src: String = '';
 
 	constructor() { 
-		if (isDevMode()) {
+		if (isDevMode()) {	// Application run locally with ng serve
+		
 			this.image1src = "../../assets/home_fantasy.jpg";
 			this.image2src = "../../assets/home_scifi.jpg";
-		} else {
+			
+		} else {	// Application running on Github Pages
+		
 			this.image1src = "assets/home_fantasy.jpg";
 			this.image2src = "assets/home_scifi.jpg";
 		}
-		console.log(isDevMode());
-		console.log("Image src: " + this.image1src);
 	}
 
 	ngOnInit(): void {

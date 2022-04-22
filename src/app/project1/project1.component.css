@@ -21,6 +21,11 @@
 	margin-left: 15px;
 }
 
+#cart a {
+	margin-right: 15px;
+	text-decoration: none;
+}
+
 #header_links {
 	float: left;
 	margin-left: 45px;

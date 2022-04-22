@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,8 +17,9 @@ import { Project1Component } from './project1/project1.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { Project2Component } from './project2/project2.component';
 import { Project3Component } from './project3/project3.component';
-import { Project1BrowseByNameComponent } from './project1/browsebyname.component';
 import { Project1BrowseComponent } from './project1/browse.component';
+import { UnderDevelopmentComponent } from './under-development/under-development.component';
+import { ViewCartComponent } from './project1/view-cart/view-cart.component';
  
 @NgModule({
   declarations: [
@@ -27,8 +29,9 @@ import { Project1BrowseComponent } from './project1/browse.component';
     PageNotFoundComponent,
     Project2Component,
     Project3Component,
-	Project1BrowseByNameComponent,
-	Project1BrowseComponent
+	Project1BrowseComponent,
+	UnderDevelopmentComponent,
+	ViewCartComponent
   ],
   imports: [
     BrowserModule,
@@ -39,14 +42,8 @@ import { Project1BrowseComponent } from './project1/browse.component';
 	MatListModule,
 	MatSelectModule,
 	FormsModule,
-	CommonModule/*,
-	RouterModule.forRoot([
-		{path: 'home', component: HomeComponent},
-		{path: 'project1', component: Project1Component},
-		//{path: 'project2', component: Project2Component},
-		{path: '', redirectTo: 'home', pathMatch: 'full'},
-		{path: '**', component: PageNotFoundComponent}
-	])*/
+	CommonModule,
+	HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

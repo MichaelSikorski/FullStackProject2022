@@ -5,7 +5,7 @@
 	</div>
 	
 	<div id="cart">
-		<a href=""><span>View Cart ({{itemsInCart}})</span></a>
+		<a [routerLink]="['./cart']">View Cart ({{ itemsInCart }})</a>
 	</div>
 </div>
 
@@ -14,16 +14,17 @@
 	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'name'}" >Name</a><span> / </span>
 	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'platform'}" >Platform</a><span> / </span>
 	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'genre'}" >Genre</a><span> / </span>
-	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'release'}" >Release Date</a><span> / </span>
-	
-	<!--<a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>-->
+	<a href="" [routerLink]="['./browse']" [queryParams]="{by:'release'}" >Release Date</a>
 	
 </div>
 
 <div id="searchbox">
-	<input type="text" placeholder="Search..." />
+	<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <input name="searchstring" type="text" ngModel required #searchstring="ngModel">
+      <button>Search</button>
+    </form>
 </div>
 
-<div style="width:100%; clear:both;">
+<div style="width:100%; clear:both;overflow:auto;">
 	<router-outlet></router-outlet>
 </div>
